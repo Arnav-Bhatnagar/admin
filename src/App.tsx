@@ -8,7 +8,7 @@ import PatientsList from './components/PatientsList';
 import AppointmentScheduler from './components/AppointmentScheduler';
 import CallManager from './components/CallManager';
 import Analytics from './components/Analytics';
-import ChatBot from './components/chatbot';
+import Chatbot from './components/chatbot';
 
 
 
@@ -40,7 +40,7 @@ function App() {
   return (
     <LanguageContext.Provider value={languageProvider}>
       <div className="min-h-screen bg-gray-50 flex">
-        <ChatBot/>
+        <Chatbot/>
         <Sidebar
           activeSection={activeSection}
           onSectionChange={setActiveSection}
