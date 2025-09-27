@@ -1,4 +1,4 @@
 import React from "react";
 
-declare const ChatBot: React.FC;
-export default ChatBot;
+declare const Chatbot: React.FC;
+export default Chatbot;
