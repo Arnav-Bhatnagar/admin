@@ -27,7 +27,9 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onSectionChange, isOpe
     { id: 'patients', icon: Users, label: t('nav.patients') },
     { id: 'appointments', icon: Calendar, label: t('nav.appointments') },
     { id: 'calls', icon: Phone, label: t('nav.calls') },
-    { id: 'analytics', icon: BarChart3, label: 'Analytics' }
+    { id: 'analytics', icon: BarChart3, label: 'Analytics' },
+    { id: 'medicine-tracker', icon:Stethoscope , label: 'Medicine-tracker' }
+    
   ];
 
   return (
@@ -77,6 +79,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onSectionChange, isOpe
               >
                 <Icon size={20} />
                 <span className="font-medium">{item.label}</span>
+                
+
               </button>
             );
           })}
