@@ -21,7 +21,8 @@ const CallManager: React.FC = () => {
       patient: 'Rajesh Kumar',
       startTime: new Date(Date.now() - 300000), // 5 minutes ago
       status: 'waiting_patient',
-      type: 'video'
+      type: 'video',
+      room:"1"
     },
     {
       id: 2,
@@ -41,6 +42,7 @@ const CallManager: React.FC = () => {
       duration: '15:30',
       endTime: new Date(Date.now() - 3600000),
       status: 'completed'
+     
     },
     {
       id: 2,
@@ -170,15 +172,46 @@ const CallManager: React.FC = () => {
                   <span className="font-medium text-gray-900">{call.patient}</span>
                 </div>
 
+
+
+
+
+                
+
+
+
+
+
+
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
                     <Clock size={16} className="text-gray-400" />
                     <span className="text-sm text-gray-600">Duration:</span>
+                    
                   </div>
+                  
                   <span className="font-medium text-gray-900 font-mono">
                     {durations[call.id] || '00:00'}
                   </span>
+                  
                 </div>
+
+
+
+
+
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <Users size={16} className="text-gray-400" />
+                    <span className="text-sm text-gray-600">Room-No.:</span>
+                  </div>
+                  <span className="font-medium text-gray-900">1</span>
+                </div>
+
+
+
+
+
               </div>
 
               <div className="flex space-x-2">
