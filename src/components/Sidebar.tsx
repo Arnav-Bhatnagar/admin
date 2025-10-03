@@ -28,7 +28,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onSectionChange, isOpe
     { id: 'appointments', icon: Calendar, label: t('nav.appointments') },
     { id: 'calls', icon: Phone, label: t('nav.calls') },
     { id: 'analytics', icon: BarChart3, label: 'Analytics' },
-    { id: 'medicine-tracker', icon:Stethoscope , label: 'Medicine-tracker' }
+    { id: 'medicine-tracker', icon:Stethoscope , label: 'Medicine-tracker' },
+    { id: 'gaand-rates', icon:Stethoscope , label: 'Gand-Rates' }
     
   ];
 
